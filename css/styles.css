@@ -47,6 +47,7 @@ img {
 }
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
     display: flex;
@@ -103,7 +104,14 @@ img {
     color: var(--accent-txt-cl);
 }
 .hero-section {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--logo-second-cl);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 188px 0;
 }
 .section {
@@ -125,7 +133,7 @@ img {
     margin-right: auto;
     margin-bottom: 48px;
 }
-.btn {
+.btn-hero {
     min-width: 169px;
     height: 56px;
     padding: 16px 32px;
@@ -138,14 +146,13 @@ img {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     cursor: pointer;
-}
-.btn-hero {
     display: block;
     margin: 0 auto;
     border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.btn:hover,
-.btn:focus {
+.btn-hero:hover,
+.btn-hero:focus {
     background-color: #404BBF;
 }
 .subtitle {
@@ -178,6 +185,17 @@ img {
 .objectives-item {
     width: 264px;
 }
+.objective-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background-color: var(--btn-bgd);
+    padding: 24px 100px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
 .card-set {
     display: flex;
     flex-wrap: wrap;
@@ -195,6 +213,7 @@ img {
 }
 .team-item {
     background-color: #fff;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0 0 4px 4px;
 }
 .desc-team {
@@ -202,6 +221,9 @@ img {
 }
 .container-name {
     padding: 32px 16px;
+}
+.section-customers {
+    padding: 120px 0;
 }
 .footer {
     background-color: var(--logo-second-cl);
@@ -220,6 +242,7 @@ img {
     font-size: 16px;
     padding: 12px 24px;
     border: 1px solid #e7e9fc;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -265,4 +288,8 @@ img {
 .prtf-card {
     border: 1px solid #e7e9fc;
     border-top: none;
+}
+.exampl-item:hover,
+.exampl-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
